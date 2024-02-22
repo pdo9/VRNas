@@ -1,0 +1,63 @@
+:root {
+  --main-colors-purple: #ca6aeb;
+  --main-colors-blue: #19b5f1;
+  --greyscale-black-100: #18181b;
+  --greyscale-black-80: #252532;
+  --greyscale-grey-1: #b0b0b2;
+  --greyscale-grey-2: #d1d1d1;
+  --greyscale-white: #fff;
+  --alerts-success: #00c566;
+  --alerts-error: #ff4747;
+  --alerts-warning: #facc15;
+
+  --font-family: 'Chakra Petch', sans-serif;
+
+  /*
+  Chakra Petch Light 551
+  Chakra Petch SemiBold 309
+  Chakra Petch Regular 289
+  Chakra Petch Medium 211
+  Chakra Petch Bold 52
+  */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.debug {
+  outline: 1px solid green;
+}
+
+.page {
+  width: 1200px;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 52px;
+
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.nav {
+}
+
+.logo__text {
+  /* fill: linear-gradient(113deg, #fff 0%, rgba(255, 255, 255, 0) 100%); */
+  fill: black;
+}
