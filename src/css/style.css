@@ -28,7 +28,6 @@
 
 body {
   /* font-family: var(--font-family); */
-
   background-color: var(--greyscale-black-100);
 }
 
@@ -55,10 +54,6 @@ ul {
   list-style: none;
 }
 
-.debug {
-  border: 1px solid green;
-}
-
 .page {
   margin: 0 auto;
   max-width: 1440px;
@@ -66,8 +61,8 @@ ul {
   padding: 0 120px;
   /* padding: 0 8.33%; */
 
-  /* color: var(--greyscale-white); */
-  color: grey;
+  background: url('../img/background/bg-lines.svg') top right no-repeat,
+    url('../img/background/bg-grid.svg') 0 284px no-repeat;
 }
 
 .btn-transparent {
@@ -95,6 +90,12 @@ ul {
     border-image-slice: 1;
     color: var(--greyscale-grey-1);
   }
+}
+
+.debug {
+  font-family: none;
+  color: greenyellow;
+  border: 1px solid green;
 }
 /* -------------------------------- */
 
@@ -301,17 +302,110 @@ ul {
   /* max-width: 475; */
 }
 
-.nav__item {
-  font-weight: 300;
+.nav__item--active {
+  font-weight: 600;
 }
 
-.nav__item--active {
-  font-weight: 500;
+.nav__link {
+  color: inherit;
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.5rem;
+  margin: 0 auto;
+  height: 2px;
+  width: 10%;
+
+  background: linear-gradient(to right, #0cbaf1, #e95ce9);
+  opacity: 0;
+
+  transition: 0.3s linear;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 /* -------------------------------- */
 
 /* -------- Main -------- */
+
+.main {
+  margin-bottom: 64px;
+}
+
+/* -- Section Hero -- */
+.section-hero {
+  width: 100%;
+  margin-bottom: 0;
+}
+/* -------- */
+
+/* -- Section Benefits -- */
+.section-benefits {
+  width: 100%;
+  margin-bottom: 120px;
+}
+/* -------- */
+
+/* -- Section About us -- */
+.section-about {
+  width: 100%;
+  margin-bottom: 150px;
+}
+/* -------- */
+
+/* -- Section Our service -- */
+.section-service {
+  width: 100%;
+  margin-bottom: 150px;
+}
+/* -------- */
+
+/* -- Section Why choose us  -- */
+.section-choose-us {
+  width: 100%;
+  margin-bottom: 150px;
+}
+/* -------- */
+
+/* -- Section How to get started  -- */
+.section-choose-us {
+  width: 100%;
+  margin-bottom: 100px;
+}
+/* -------- */
+
+/* -- Section Testimonial  -- */
+.section-testimonial {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+/* -- Section Our pricing  -- */
+.section-testimonial {
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+/* -- Section Our articles  -- */
+.section-articles {
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+/* -- Section Subscribe  -- */
+.section-subscribe {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
 /* -------------------------------- */
 
 /* -------- Footer -------- */
