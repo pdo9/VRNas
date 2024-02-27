@@ -26,6 +26,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* font-family: var(--font-family); */
   background-color: var(--greyscale-black-100);
@@ -90,6 +94,22 @@ ul {
     border-image-slice: 1;
     color: var(--greyscale-grey-1);
   }
+}
+
+.btn-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 206px;
+  min-height: 50px;
+  padding: 0 5px;
+
+  background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+}
+
+.video-frame {
+  width: 192px;
+  height: 128px;
 }
 
 .debug {
@@ -285,6 +305,7 @@ ul {
   align-items: center;
   width: 100%;
   height: 114px;
+  margin-bottom: 13px;
 }
 
 .header__logo {
@@ -342,67 +363,106 @@ ul {
 
 /* -- Section Hero -- */
 .section-hero {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
   margin-bottom: 0;
 }
-/* -------- */
+
+.section-hero__title-container {
+  max-width: 540px;
+  max-height: 316px;
+}
+
+.section-hero__text-box {
+  margin-bottom: 42px;
+}
+
+.section-hero__title {
+  padding-top: 74px;
+}
+
+.section-hero__description {
+  margin-bottom: 32px;
+  color: var(--greyscale-grey-2);
+}
+
+.section-hero__img-container {
+  max-width: 526px;
+  height: 626px;
+}
+
+.section-hero__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.section-hero__happy-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 548px;
+}
+
+.section-hero__clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-hero__thumbnails {
+  margin-right: 18px;
+}
+
+.section-hero__thin-text {
+  /* font-size: 300; */
+  color: var(--greyscale-grey-2);
+}
 
 /* -- Section Benefits -- */
 .section-benefits {
-  width: 100%;
   margin-bottom: 120px;
 }
-/* -------- */
 
 /* -- Section About us -- */
 .section-about {
-  width: 100%;
   margin-bottom: 150px;
 }
-/* -------- */
 
 /* -- Section Our service -- */
 .section-service {
-  width: 100%;
   margin-bottom: 150px;
 }
-/* -------- */
 
 /* -- Section Why choose us  -- */
 .section-choose-us {
-  width: 100%;
   margin-bottom: 150px;
 }
-/* -------- */
 
 /* -- Section How to get started  -- */
-.section-choose-us {
-  width: 100%;
+.section-start {
   margin-bottom: 100px;
 }
-/* -------- */
 
 /* -- Section Testimonial  -- */
 .section-testimonial {
-  width: 100%;
   margin-bottom: 100px;
 }
 
 /* -- Section Our pricing  -- */
-.section-testimonial {
-  width: 100%;
+.section-pricing {
   margin-bottom: 150px;
 }
 
 /* -- Section Our articles  -- */
 .section-articles {
-  width: 100%;
   margin-bottom: 150px;
 }
 
 /* -- Section Subscribe  -- */
 .section-subscribe {
-  width: 100%;
   margin-bottom: 0px;
 }
 
