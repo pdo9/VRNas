@@ -59,11 +59,11 @@ ul {
 }
 
 .page {
-  margin: 0 auto;
   max-width: 1440px;
   height: 100%;
-  padding: 0 120px;
-  /* padding: 0 8.33%; */
+  margin: 0 auto;
+  padding: 0;
+  /* padding: 0 120px; */
 
   background: url('../img/background/bg-lines.svg') top right no-repeat,
     url('../img/background/bg-grid.svg') 0 284px no-repeat;
@@ -300,12 +300,17 @@ ul {
 
 /* -------- Header --------  */
 .header {
+  margin-bottom: 13px;
+  padding: 0 120px;
+}
+
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 1200px;
   height: 114px;
-  margin-bottom: 13px;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -352,22 +357,25 @@ ul {
   width: 100%;
   opacity: 1;
 }
-
 /* -------------------------------- */
 
 /* -------- Main -------- */
-
 .main {
   margin-bottom: 64px;
 }
 
 /* -- Section Hero -- */
 .section-hero {
+  margin-bottom: 0;
+  padding: 0 120px;
+}
+
+.section-hero__inner {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-
-  margin-bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-hero__title-container {
@@ -428,16 +436,18 @@ ul {
 
 /* -- Section Benefits -- */
 .section-benefits {
+  margin-bottom: 120px;
+  padding: 0 120px;
+}
+
+.section-benefits__inner {
   display: flex;
   align-items: center;
+  gap: 50px;
   max-width: 1200px;
   min-height: 357px;
-  margin-bottom: 120px;
-  padding-top: 42px;
-  padding-left: 64px;
-  padding-right: 63px;
+  margin: 0 auto;
   padding: 42px 63px 53px 64px;
-  gap: 50px;
 
   background: var(--greyscale-black-80);
 }
@@ -467,44 +477,111 @@ ul {
 /* -- Section About us -- */
 .section-about {
   margin-bottom: 150px;
+  padding: 0 120px 0 82px;
+}
+
+.section-about__inner {
+  max-width: 1238px;
+  height: 465px;
 }
 
 /* -- Section Our service -- */
 .section-service {
   margin-bottom: 150px;
+  padding: 0 120px;
+}
+
+.section-service__inner {
+  max-width: 1200px;
+  height: 908px;
+  margin: 0 auto;
 }
 
 /* -- Section Why choose us  -- */
 .section-choose-us {
   margin-bottom: 150px;
+  padding: 0 19px 0 120px;
+}
+
+.section-choose-us__inner {
+  max-width: 1300px;
+  height: 700px;
 }
 
 /* -- Section How to get started  -- */
 .section-start {
   margin-bottom: 100px;
+  padding: 0 120px;
+}
+
+.section-start__inner {
+  max-width: 1200px;
+  height: 818px;
+  margin: 0 auto;
 }
 
 /* -- Section Testimonial  -- */
 .section-testimonial {
   margin-bottom: 100px;
+  padding: 0 96px;
+}
+
+.section-testimonial__inner {
+  max-width: 1248px;
+  height: 1248px;
+  margin: 0 auto;
 }
 
 /* -- Section Our pricing  -- */
 .section-pricing {
   margin-bottom: 150px;
+  padding: 0 67px 0 120px;
+}
+
+.section-pricing__inner {
+  max-width: 1254px;
+  height: 838px;
+}
+
+/* -- Section Our trusted partners -- */
+.section-partners {
+  margin-bottom: 150px;
+  padding: 0 193px;
+}
+
+.section-partners__inner {
+  max-width: 1054px;
+  height: 890px;
+  margin: 0 auto;
 }
 
 /* -- Section Our articles  -- */
 .section-articles {
   margin-bottom: 150px;
+  padding-left: 14px;
+}
+
+.section-articles__inner {
+  max-width: 1426px;
+  height: 768px;
 }
 
 /* -- Section Subscribe  -- */
 .section-subscribe {
   margin-bottom: 0px;
+  padding: 0 120px;
 }
 
+.section-subscribe__inner {
+  max-width: 1200px;
+  height: 185px;
+}
 /* -------------------------------- */
 
 /* -------- Footer -------- */
+.footer {
+  max-width: 1440px;
+  height: 508px;
+  padding: 0 20px;
+}
 /* -------------------------------- */
