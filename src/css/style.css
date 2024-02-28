@@ -412,18 +412,56 @@ ul {
   align-items: center;
 }
 
-.section-hero__thumbnails {
-  margin-right: 18px;
+.section-hero__client-thumb:not(:first-child) {
+  margin-left: -16px;
+}
+
+.section-hero__clients-text {
+  padding-left: 18px;
+
+  background: url('../img/happy-client-underline.svg') left 12% bottom 8% no-repeat;
 }
 
 .section-hero__thin-text {
-  /* font-size: 300; */
   color: var(--greyscale-grey-2);
 }
 
 /* -- Section Benefits -- */
 .section-benefits {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 357px;
   margin-bottom: 120px;
+  padding-top: 42px;
+  padding-left: 64px;
+  padding-right: 63px;
+  padding: 42px 63px 53px 64px;
+  gap: 50px;
+
+  background: var(--greyscale-black-80);
+}
+
+.section_benefits__advantage {
+  width: 324px;
+  height: 262px;
+}
+
+.section_benefits__img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 42px;
+}
+
+.section_benefits__header {
+  margin-bottom: 12px;
+}
+
+.section_benefits__text {
+  color: var(--greyscale-grey-1);
 }
 
 /* -- Section About us -- */
