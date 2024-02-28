@@ -27,7 +27,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -63,10 +63,9 @@ ul {
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  /* padding: 0 120px; */
 
   background: url('../img/background/bg-lines.svg') top right no-repeat,
-    url('../img/background/bg-grid.svg') 0 284px no-repeat;
+    url('../img/background/bg-grid.svg') 0 274px no-repeat;
 }
 
 .btn-transparent {
@@ -389,6 +388,7 @@ ul {
 
 .section-hero__title {
   padding-top: 74px;
+  margin-bottom: 12px;
 }
 
 .section-hero__description {
@@ -399,6 +399,8 @@ ul {
 .section-hero__img-container {
   max-width: 526px;
   height: 626px;
+
+  background: url('../img/background/bg-light-section-hero.svg') no-repeat center / contain;
 }
 
 .section-hero__img {
@@ -481,8 +483,74 @@ ul {
 }
 
 .section-about__inner {
+  display: flex;
+  justify-content: space-between;
   max-width: 1238px;
-  height: 465px;
+  height: 645px;
+}
+
+.section-about__img-container {
+  align-self: flex-start;
+  padding-left: 78px;
+
+  background: url('../img/background/bg-light-section-about.svg') no-repeat center / contain,
+    url('../img/background/bg-rectangle.svg') no-repeat left 55px bottom 0px / 398px 496px;
+}
+
+.section-about__img {
+  /* filter: blur(210px); */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.section-about__text-container {
+  align-self: flex-end;
+  max-width: 562px;
+  height: 550px;
+  margin-bottom: 15px;
+}
+
+.section-about__title {
+  margin-bottom: 12px;
+
+  background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+  background-clip: text;
+  color: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+}
+
+.section-about__header {
+  margin-bottom: 12px;
+}
+
+.section-about__description {
+  display: inline-block;
+  max-width: 528px;
+  margin-bottom: 24px;
+
+  color: var(--greyscale-grey-2);
+}
+
+.section-about__list {
+  margin-bottom: 32px;
+
+  color: var(--greyscale-white);
+}
+
+.section-about__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.section-about__item::before {
+  content: url('../img/misc/checkbox_icon.svg');
+  padding-right: 12px;
+  vertical-align: middle;
+}
+
+.section-about__btn {
+  width: 168px;
+  min-height: 50px;
 }
 
 /* -- Section Our service -- */
