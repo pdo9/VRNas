@@ -138,6 +138,22 @@ ul {
   height: 128px;
 }
 
+.text-gradient-small {
+  background: #0cbaf1;
+  background: linear-gradient(to right, #0cbaf1 0%, #e95ce9 15%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-big {
+  background: #0cbaf1;
+  background: linear-gradient(to right, #0cbaf1 0%, #e95ce9 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .debug {
   font-family: none;
   color: greenyellow;
@@ -546,14 +562,14 @@ ul {
   margin-bottom: 15px;
 }
 
-.section-about__title {
+.section-about__caption {
   margin-bottom: 12px;
 
-  background: #0cbaf1;
+  /* background: #0cbaf1;
   background: linear-gradient(to right, #0cbaf1 0%, #e95ce9 15%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .section-about__header {
@@ -596,9 +612,42 @@ ul {
 }
 
 .section-service__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 1200px;
   height: 908px;
   margin: 0 auto;
+}
+
+.section-service__text-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1158px;
+  height: 115px;
+  padding-right: 42px;
+}
+
+.section-service__header-box {
+  /* margin-right: 274px; */
+  margin-right: 270px;
+}
+
+.section-service__caption {
+  margin-bottom: 12px;
+}
+
+.section-service__description {
+  display: inline-block;
+  max-width: 625px;
+  height: 100%;
+
+  color: var(--greyscale-grey-2);
+}
+
+.section-service__services-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* -- Section Why choose us  -- */
