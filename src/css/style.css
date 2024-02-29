@@ -12,47 +12,39 @@
   --alerts-warning: #facc15;
 
   --font-family: 'Chakra Petch', sans-serif;
-
-  /*
-  Chakra Petch Light 551
-  Chakra Petch SemiBold 309
-  Chakra Petch Regular 289
-  Chakra Petch Medium 211
-  Chakra Petch Bold 52
-  */
 }
 
 @font-face {
   font-family: 'Chakra Petch';
-  src: url('../fonts/ChakraPetch/ChakraPetch-Light.ttf') format('truetype');
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Chakra Petch';
-  src: url('../fonts/ChakraPetch/ChakraPetch-Regular.ttf') format('truetype');
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Chakra Petch';
-  src: url('../fonts/ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Chakra Petch';
-  src: url('../fonts/ChakraPetch/ChakraPetch-SemiBold.ttf') format('truetype');
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-SemiBold.ttf') format('truetype');
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Chakra Petch';
-  src: url('../fonts/ChakraPetch/ChakraPetch-Bold.ttf') format('truetype');
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
 }
@@ -518,6 +510,7 @@ ul {
 }
 
 .section-about__inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 1238px;
@@ -540,6 +533,12 @@ ul {
   vertical-align: top;
 }
 
+.section-about__video {
+  position: absolute;
+  bottom: 0;
+  left: 386px;
+}
+
 .section-about__text-container {
   align-self: flex-end;
   max-width: 562px;
@@ -550,20 +549,11 @@ ul {
 .section-about__title {
   margin-bottom: 12px;
 
-  /* font-size: 80px; */
-  /* font-weight: 600; */
-
-  /* background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+  background: #0cbaf1;
+  background: linear-gradient(to right, #0cbaf1 0%, #e95ce9 15%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-
-  color: #fff;
-  background-image: -webkit-linear-gradient(45deg, #0cbaf1 33.3%, #e95ce9 66.6%);
-  -webkit-background-clip: text;
-  /* background-clip: text; */
   -webkit-text-fill-color: transparent;
-  /* text-fill-color: transparent; */
 }
 
 .section-about__header {
