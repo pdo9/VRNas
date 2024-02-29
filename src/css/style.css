@@ -51,6 +51,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -62,26 +64,11 @@ body {
   background-color: var(--greyscale-black-100);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
 }
 
-p {
-  margin: 0;
-}
-
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -89,7 +76,6 @@ ul {
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
-  padding: 0;
 
   background: url('../img/background/bg-lines.svg') top right no-repeat,
     url('../img/background/bg-grid.svg') 0 274px no-repeat;
@@ -614,7 +600,6 @@ ul {
 .section-service__inner {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   max-width: 1200px;
   height: 908px;
   margin: 0 auto;
@@ -626,11 +611,7 @@ ul {
   max-width: 1158px;
   height: 115px;
   padding-right: 42px;
-}
-
-.section-service__header-box {
-  /* margin-right: 274px; */
-  margin-right: 270px;
+  margin-bottom: 46px;
 }
 
 .section-service__caption {
@@ -640,14 +621,73 @@ ul {
 .section-service__description {
   display: inline-block;
   max-width: 625px;
-  height: 100%;
 
   color: var(--greyscale-grey-2);
 }
 
-.section-service__services-container {
+.section-service__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  /* height: 100%; */
+}
+
+.section-service__list::before,
+.section-service__list::after {
+  content: '';
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+.section-service__item {
+  max-width: 379px;
+  height: 291px;
+
+  padding: 38px 0 0 32px;
+  background: rgba(37, 37, 50, 0.6);
+}
+
+.section-service__item:nth-child(3n + 1) {
+  order: 1;
+  margin-right: 36px;
+}
+
+.section-service__item:nth-child(3n + 2) {
+  order: 2;
+  margin-top: 57px;
+  margin-right: 26px;
+}
+
+.section-service__item:nth-child(3n) {
+  order: 3;
+  margin-top: 135px;
+}
+
+.section-service__item:nth-child(4n) {
+  margin-top: 32px;
+}
+
+.section-service__item:nth-child(5n) {
+  margin-top: 30px;
+}
+
+.section-service__item:nth-child(6n) {
+  margin-top: 30px;
+}
+
+.section-service__card-img {
+  margin-bottom: 58px;
+}
+
+.section-service__card-caption {
+  /* margin: 146px 0 12px 0; */
+  margin-bottom: 12px;
+}
+
+.section-service__card-description {
+  max-width: 291px;
+  color: var(--greyscale-grey-1);
 }
 
 /* -- Section Why choose us  -- */
