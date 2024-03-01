@@ -568,9 +568,30 @@ ul {
 }
 
 .section-start__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
   max-width: 1200px;
   height: 818px;
   margin: 0 auto;
+}
+
+.section-start__text-box {
+  max-width: 879px;
+  height: 149px;
+  text-align: center;
+}
+
+.section-start__video {
+  width: 100%;
+  height: 522px;
+}
+
+.section-start__btn {
+  width: 182px;
+  min-height: 50px;
 }
 
 /* -- Section Testimonial  -- */
