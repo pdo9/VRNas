@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'Chakra Petch';
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  src: local('Chakra Petch'), url('../fonts/ChakraPetch/ChakraPetch-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* -------- Heading text style -------- */
+.heading-text-style01 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: -0.01em;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style02 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 121%;
+  letter-spacing: -0.01em;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style03 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 145%;
+  letter-spacing: -0.01em;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style04 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 122%;
+  letter-spacing: -0.02em;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style05 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style06 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style07 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style08 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style09 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style10 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style11 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--greyscale-white);
+}
+
+.heading-text-style12 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--greyscale-white);
+}
+/* -------------------------------- */
+
+/* -------- Body text style -------- */
+.body-text-style01 {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--greyscale-white);
+}
+
+.body-text-style02 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  color: var(--greyscale-white);
+}
+
+.body-text-style03 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--greyscale-white);
+}
+
+.body-text-style04 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: var(--greyscale-white);
+}
+
+/* -------------------------------- */
+
+/* -------- Caption text style -------- */
+.caption-text-style01 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--greyscale-white);
+}
+
+.caption-text-style02 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--greyscale-white);
+}
+
+.caption-text-style03 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+  color: var(--greyscale-white);
+}
+/* -------------------------------- */
+
+/* -------- Button text style -------- */
+.btn-text-style01 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--greyscale-white);
+}
+
+.btn-text-style02 {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--greyscale-white);
+}
+/* -------------------------------- */
