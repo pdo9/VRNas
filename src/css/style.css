@@ -601,9 +601,25 @@ ul {
 }
 
 .section-testimonial__inner {
+  position: relative;
   max-width: 1248px;
   height: 1248px;
   margin: 0 auto;
+}
+
+.section-testimonial__text-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 628px;
+  margin-top: 111px;
+  height: 91px;
+  text-align: center;
+}
+
+.section-testimonial__caption {
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
 /* -- Section Our pricing  -- */
