@@ -46,6 +46,7 @@ ul {
   margin: 0 auto;
 
   background: url('../img/background/bg-lines.svg') no-repeat top right,
+    url('../img/background/bg-lines-footer.svg') no-repeat left bottom,
     url('../img/background/bg-grid.svg') no-repeat 0 274px,
     url('../img/background/bg-light-section-service.svg') no-repeat left 850px top 1800px;
 }
@@ -919,8 +920,106 @@ ul {
 
 /* -------- Footer -------- */
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 1440px;
   height: 508px;
-  padding: 0 20px;
 }
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 116px 118px 33px 122px;
+  /* width: 1193px; */
+  width: 1200px;
+  height: 250px;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 244px;
+  height: 213px;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 771px;
+  height: 248px;
+}
+
+.footer__quicklinks {
+  width: 85px;
+  height: 248px;
+}
+
+.footer__support {
+  width: 132px;
+  height: 248px;
+}
+
+.footer__help {
+  width: 319px;
+  height: 160px;
+}
+
+.footer__lsit li:not(:last-child) {
+  margin: 16px 0 16px 0;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__address::before {
+  content: url('../icons/address_nav_icon.svg');
+  margin: 0 8px 0 4px;
+}
+
+.footer__mailto {
+  color: inherit;
+}
+
+.footer__mailto::before {
+  content: url('../icons/mail_nav_icon.svg');
+  margin-right: 8px;
+}
+
+.footer__tel {
+  color: inherit;
+}
+
+.footer__tel::before {
+  content: url('../icons/phone_nav_icon.svg');
+  margin-right: 8px;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 118px 47px 122px;
+  width: 1200px;
+  height: 60px;
+
+  border-top: 1px solid #eee;
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
+  border-image-slice: 1;
+}
+
 /* -------------------------------- */
