@@ -808,9 +808,102 @@ ul {
 }
 
 .section-partners__inner {
-  max-width: 1054px;
-  height: 890px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 1054px;
+  min-height: 890px;
   margin: 0 auto;
+
+  background: url('../img/background/bg-light-section-partners.svg') no-repeat center bottom,
+    url('../img/background/bg-ellipse-partners.svg') no-repeat center bottom 0;
+}
+
+.section-partners__header-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list-half-circle__item {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 100%;
+
+  /* 226.5 - половина размера bg-ellipse-partners.svg*/
+  transform: translate(-50%, calc(50% - 226.5px));
+  clip-path: circle(50% at 50% calc(50% - 45px));
+}
+
+.list-half-circle__item:nth-of-type(2) {
+  border-radius: 100%;
+  border-top: 1px solid transparent;
+  background: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple)) border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.section-partners__logo-box {
+  position: absolute;
+  left: 15px;
+  top: 580px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 102px;
+
+  background: url('../img/background/bg-partners-logo.svg');
+}
+
+.section-partners__logo-box:nth-of-type(2) {
+  left: 84px;
+  top: 388px;
+}
+
+.section-partners__logo-box:nth-of-type(3) {
+  left: 241px;
+  top: 230px;
+}
+
+.section-partners__logo-box:nth-of-type(4) {
+  left: 476px;
+  top: 160px;
+}
+
+.section-partners__logo-box:nth-of-type(5) {
+  left: 711px;
+  top: 230px;
+}
+
+.section-partners__logo-box:nth-of-type(6) {
+  left: 881px;
+  top: 388px;
+}
+
+.section-partners__logo-box:nth-of-type(7) {
+  left: 938px;
+  top: 588px;
+}
+
+.section-partners__logo-box:hover {
+  background: url('../img/background/bg-light-section-testimonial-avatar.svg') no-repeat center,
+    url('../img/background/bg-partners-logo.svg');
+}
+
+.section-partners__img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  width: 707px;
+  height: 554px;
 }
 
 /* -- Section Our articles  -- */
