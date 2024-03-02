@@ -3,8 +3,8 @@
 
 :root {
   --font-family: 'Chakra Petch', sans-serif;
-  --main-colors-purple: #ca6aeb;
-  --main-colors-blue: #19b5f1;
+  --main-colors-blue: #0cbaf1;
+  --main-colors-purple: #e95ce9;
   --greyscale-black-100: #18181b;
   --greyscale-black-80: #252532;
   --greyscale-grey-1: #b0b0b2;
@@ -59,7 +59,7 @@ ul {
   padding: 0 5px;
 
   border: 2px solid #000;
-  border-image: linear-gradient(to right, #0cbaf1, #e95ce9);
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
   border-image-slice: 1;
 }
 
@@ -74,7 +74,7 @@ ul {
 
 @keyframes gradient-border {
   50% {
-    border-image: linear-gradient(to left, #0cbaf1, #e95ce9);
+    border-image: linear-gradient(to left, var(--main-colors-blue), var(--main-colors-purple));
     border-image-slice: 1;
   }
 }
@@ -87,7 +87,7 @@ ul {
   min-height: 50px;
   padding: 0 5px;
 
-  background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+  background: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
 }
 
 .video-frame {
@@ -99,8 +99,8 @@ ul {
   display: inline-block;
   margin-bottom: 12px;
 
-  background: #0cbaf1;
-  background: linear-gradient(to right, #0cbaf1 0%, #e95ce9 100%);
+  background: var(--main-colors-blue);
+  background: linear-gradient(to right, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -165,7 +165,7 @@ ul {
   height: 2px;
   width: 10%;
 
-  background: linear-gradient(to right, #0cbaf1, #e95ce9);
+  background: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
   opacity: 0;
 
   transition: 0.3s linear;
@@ -772,7 +772,7 @@ ul {
 
   background: var(--greyscale-black-80);
   border: 2px solid #000;
-  border-image: linear-gradient(to right, #0cbaf1, #e95ce9);
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
   border-image-slice: 1;
 }
 
@@ -833,6 +833,88 @@ ul {
   max-width: 1200px;
   height: 185px;
 }
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 74px 0 74px;
+
+  background: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
+}
+
+.subscribe__header {
+  max-width: 520px;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 365px;
+  height: 56px;
+
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.subscribe__form:focus-within {
+  outline: 1px solid var(--main-colors-blue);
+}
+
+.subscribe__form:hover {
+  outline: 1px solid var(--main-colors-blue);
+}
+
+.subscribe__input {
+  padding-left: 46px;
+  width: calc(100% - 49px);
+  height: 100%;
+
+  text-overflow: ellipsis;
+
+  border: none;
+  background: url('../icons/mail_icon.svg') no-repeat left 14px center;
+}
+
+.subscribe__input::placeholder {
+  color: var(--greyscale-white);
+
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.subscribe__input:focus {
+  outline: none;
+}
+
+.subscribe__input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.subscribe__btn {
+  width: 49px;
+  height: 49px;
+  padding: 3px;
+  margin: 3px;
+  margin-left: 0;
+
+  cursor: pointer;
+  border: none;
+  background: url('../icons/send_bg_icon.svg') no-repeat center, url('../icons/send_icon.svg') no-repeat center;
+}
+
+.subscribe__btn:hover {
+  background-color: #ea43ea;
+}
+
+.subscribe__btn:active {
+  background-color: #d034d0;
+}
+
 /* -------------------------------- */
 
 /* -------- Footer -------- */
