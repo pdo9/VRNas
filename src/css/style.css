@@ -47,7 +47,8 @@ ul {
 
   background: url('../img/background/bg-lines.svg') no-repeat top right,
     url('../img/background/bg-lines-footer.svg') no-repeat left bottom,
-    url('../img/background/bg-grid.svg') no-repeat 0 274px,
+    url('../img/background/bg-grid.svg') no-repeat left top 274px,
+    url('../img/background/bg-grid-footer.svg') no-repeat left bottom 617px,
     url('../img/background/bg-light-section-service.svg') no-repeat left 850px top 1800px;
 }
 
@@ -89,6 +90,20 @@ ul {
   padding: 0 5px;
 
   background: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
+
+  transition: 0.3 ease;
+}
+
+.btn-gradient:hover,
+.btn-gradient:active {
+  background: transparent;
+
+  border: 2px solid #000;
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
+  border-image-slice: 1;
+
+  animation: gradient-border 2s ease-out infinite;
+  background-color: var(--greyscale-black-80);
 }
 
 .video-frame {
@@ -187,6 +202,8 @@ ul {
 .section-hero {
   margin-bottom: 0;
   padding: 0 120px;
+
+  background: url('../img/background/bg-light-section-hero.svg') no-repeat right 50%;
 }
 
 .section-hero__inner {
@@ -219,14 +236,11 @@ ul {
 .section-hero__img-container {
   max-width: 526px;
   height: 626px;
-
-  background: url('../img/background/bg-light-section-hero.svg') no-repeat center / contain;
 }
 
 .section-hero__img {
   width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 .section-hero__happy-box {
@@ -315,14 +329,13 @@ ul {
   align-self: flex-start;
   padding-left: 78px;
 
-  background: url('../img/background/bg-light-section-about.svg') no-repeat 50% 50% / cover,
-    url('../img/background/bg-rectangle.svg') no-repeat left 55px bottom 0px / 398px 496px;
+  background: url('../img/background/bg-light-section-about.svg') no-repeat,
+    url('../img/background/bg-rectangle.svg') no-repeat left 55px bottom;
 }
 
 .section-about__img {
   width: 100%;
   height: auto;
-  object-fit: contain;
   vertical-align: top;
 }
 
@@ -342,6 +355,7 @@ ul {
 
 .section-about__header {
   margin-bottom: 12px;
+  padding-right: 20px;
 }
 
 .section-about__description {
@@ -519,7 +533,6 @@ ul {
 .section-choose-us__img {
   width: 100%;
   height: auto;
-  /* object-fit: contain; */
   vertical-align: top;
 }
 
@@ -638,7 +651,8 @@ ul {
 }
 
 .section-testimonial__avatar-box:hover {
-  background: url('../img/background/bg-avatar-gradient.svg') no-repeat center;
+  background: url('../img/background/bg-light-section-testimonial-avatar.svg') no-repeat center / cover,
+    url('../img/background/bg-avatar-gradient.svg') no-repeat center;
 }
 
 .section-testimonial__avatar-box:nth-of-type(2) {
@@ -668,15 +682,6 @@ ul {
 
 .section-testimonial__avatar {
   transform: translate(25%, 25%);
-}
-
-.avatar-light-effect {
-  position: absolute;
-  inset: 0;
-
-  display: none;
-
-  transform: translate(-10%, -10%);
 }
 
 /* -- Section Our pricing  -- */
@@ -940,6 +945,8 @@ ul {
 
 .subscribe__header {
   max-width: 520px;
+
+  user-select: none;
 }
 
 .subscribe__form {
@@ -1114,5 +1121,4 @@ ul {
   border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
   border-image-slice: 1;
 }
-
 /* -------------------------------- */
