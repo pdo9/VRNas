@@ -24,11 +24,11 @@
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
-  /* font-family: var(--font-family); */
+  font-family: var(--font-family);
   background-color: var(--greyscale-black-100);
 }
 
@@ -1236,7 +1236,7 @@ ul {
   height: 160px;
 }
 
-.footer__lsit li:not(:last-child) {
+.footer__list li:not(:last-child) {
   margin: 16px 0 16px 0;
 }
 
