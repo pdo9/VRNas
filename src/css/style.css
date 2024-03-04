@@ -70,7 +70,6 @@ ul {
   animation: gradient-border 2s ease-out infinite;
   -webkit-animation: gradient-border 2s ease-out infinite;
   -moz-animation: gradient-border 2s ease-out infinite;
-  -o-animation: gradient-border 2s ease-out infinite;
   background-color: var(--greyscale-black-80);
 }
 
@@ -91,7 +90,7 @@ ul {
 
   background: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
 
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .btn-gradient:hover,
@@ -109,6 +108,7 @@ ul {
 .video-frame {
   width: 192px;
   height: 128px;
+  border: 0;
 }
 
 .text-gradient {
@@ -121,18 +121,10 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.debug {
-  font-family: none;
-  color: greenyellow;
-
-  border: 1px solid green;
-}
 /* -------------------------------- */
 
 /* -------- Header --------  */
 .header {
-  margin-bottom: 13px;
   padding: 0 120px;
 }
 
@@ -157,7 +149,6 @@ ul {
 .nav__list {
   display: flex;
   gap: 64px;
-  /* max-width: 475; */
 }
 
 .nav__item--active {
@@ -195,7 +186,7 @@ ul {
 
 /* -------- Main -------- */
 .main {
-  margin-bottom: 64px;
+  padding: 13px 0 64px 0;
 }
 
 /* -- Section Hero -- */
@@ -225,7 +216,7 @@ ul {
 
 .section-hero__title {
   padding-top: 74px;
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
 }
 
 .section-hero__description {
@@ -272,7 +263,6 @@ ul {
 
 /* -- Section Benefits -- */
 .section-benefits {
-  margin-bottom: 120px;
   padding: 0 120px;
 }
 
@@ -312,8 +302,7 @@ ul {
 
 /* -- Section About us -- */
 .section-about {
-  margin-bottom: 150px;
-  padding: 0 120px 0 82px;
+  padding: 120px 120px 0 82px;
 }
 
 .section-about__inner {
@@ -389,8 +378,7 @@ ul {
 
 /* -- Section Our service -- */
 .section-service {
-  margin-bottom: 150px;
-  padding: 0 120px;
+  padding: 120px 120px 0 120px;
 }
 
 .section-service__inner {
@@ -472,7 +460,6 @@ ul {
 }
 
 .section-service__card-caption {
-  /* margin: 146px 0 12px 0; */
   margin-bottom: 12px;
 }
 
@@ -483,8 +470,7 @@ ul {
 
 /* -- Section Why choose us  -- */
 .section-choose-us {
-  margin-bottom: 150px;
-  padding: 0 19px 0 120px;
+  padding: 150px 19px 0 120px;
 }
 
 .section-choose-us__inner {
@@ -515,7 +501,6 @@ ul {
   margin-bottom: 24px;
   padding-bottom: 12px;
 
-  cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
@@ -549,8 +534,7 @@ ul {
 
 /* -- Section How to get started  -- */
 .section-start {
-  margin-bottom: 100px;
-  padding: 0 120px;
+  padding: 150px 120px 0 120px;
 }
 
 .section-start__inner {
@@ -582,8 +566,7 @@ ul {
 
 /* -- Section Testimonial  -- */
 .section-testimonial {
-  margin-bottom: 100px;
-  padding: 0 96px;
+  padding: 100px 96px 0 96px;
 }
 
 .section-testimonial__inner {
@@ -686,8 +669,7 @@ ul {
 
 /* -- Section Our pricing  -- */
 .section-pricing {
-  margin-bottom: 150px;
-  padding: 0 67px 0 120px;
+  padding: 100px 67px 0 120px;
 }
 
 .section-pricing__inner {
@@ -726,7 +708,6 @@ ul {
 
 .section-pricing__list {
   width: 758px;
-  /* margin: 55px 0 0 42px; */
   padding: 55px 0 0 42px;
 
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -808,8 +789,7 @@ ul {
 
 /* -- Section Our trusted partners -- */
 .section-partners {
-  margin-bottom: 150px;
-  padding: 0 193px;
+  padding: 150px 193px 0 193px;
 }
 
 .section-partners__inner {
@@ -845,6 +825,10 @@ ul {
   clip-path: circle(50% at 50% calc(50% - 45px));
 }
 
+/* TODO: градиентная граница-полукруг, некорректно работает в Firefox
+  Сделать кроссбраузерность или найти другой способ добавления градиентной рамки
+*/
+/* 
 .list-half-circle__item:nth-of-type(2) {
   border-radius: 100%;
   border-top: 1px solid transparent;
@@ -854,7 +838,7 @@ ul {
   -webkit-mask-composite: xor;
   -moz-mask-composite: xor;
   mask-composite: exclude;
-}
+} */
 
 .section-partners__logo-box {
   position: absolute;
@@ -917,7 +901,7 @@ ul {
 
 /* -- Section Our articles  -- */
 .section-articles {
-  margin-bottom: 150px;
+  padding: 150px 0 0 14px;
 
   background: url('../img/background/bg-light-section-articles.svg') no-repeat;
 }
@@ -1056,9 +1040,6 @@ ul {
 }
 
 .slider__hashtag {
-  /* display: flex;
-  align-items: center;
-  justify-items: center; */
   width: fit-content;
   padding: 2px 10px;
   height: 24px;
@@ -1083,8 +1064,7 @@ ul {
 
 /* -- Section Subscribe  -- */
 .section-subscribe {
-  margin-bottom: 0px;
-  padding: 0 120px;
+  padding: 150px 120px 64px 120px;
 }
 
 .section-subscribe__inner {
@@ -1190,7 +1170,6 @@ ul {
   justify-content: space-between;
 
   margin: 116px 118px 33px 122px;
-  /* width: 1193px; */
   width: 1200px;
   height: 250px;
 }
