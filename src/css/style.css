@@ -504,7 +504,15 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-.section-choose-us__item-description {
+.section-pricing__item-description {
+  color: var(--greyscale-grey-2);
+}
+
+.section-choose-us__item-caption:hover {
+  cursor: pointer;
+}
+
+.accordion-hide {
   display: none;
 }
 
@@ -526,10 +534,6 @@ ul {
   right: 102px;
 
   bottom: 0;
-}
-
-.is-visible {
-  display: initial;
 }
 
 /* -- Section How to get started  -- */
