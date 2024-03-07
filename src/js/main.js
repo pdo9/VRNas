@@ -58,10 +58,29 @@ const toggleAccordionContent = (element) => {
   element.classList.toggle(ACCORDION_TOGGLE_CLASS)
 }
 
+const toggleArrowIcon = (element) => {
+  let arrowDownClass = 'icon-arrow-down'
+  let arrowUpClass = 'icon-arrow-up'
+  if (!element.classList.contains(ACCORDION_HEADER_CLASS)) return
+
+  if (element.classList.contains(arrowDownClass)) {
+    element.classList.remove(arrowDownClass)
+    element.classList.add(arrowUpClass)
+    return
+  }
+
+  if (element.classList.contains(arrowUpClass)) {
+    element.classList.remove(arrowUpClass)
+    element.classList.add(arrowDownClass)
+    return
+  }
+}
+
 const handleAccordionClick = (event) => {
   let clickedElement = event.target
 
   if (clickedElement.classList.contains(ACCORDION_HEADER_CLASS)) {
+    toggleArrowIcon(clickedElement)
     toggleAccordionContent(clickedElement.nextElementSibling)
 
     const filteredAccordionHeaderList = Array.from(accordionHeaderList).filter((item) => {
