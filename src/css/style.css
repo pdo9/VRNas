@@ -182,6 +182,24 @@ ul {
   width: 100%;
   opacity: 1;
 }
+
+.nav__list-dropdown {
+  position: absolute;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.nav__item:hover .nav__list-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav__dropdown-item {
+  padding-top: 8px;
+}
 /* -------------------------------- */
 
 /* -------- Main -------- */
@@ -1222,17 +1240,17 @@ ul {
 }
 
 .footer__quicklinks {
-  width: 85px;
+  width: fit-content;
   height: 248px;
 }
 
 .footer__support {
-  width: 132px;
+  width: fit-content;
   height: 248px;
 }
 
 .footer__help {
-  width: 319px;
+  width: fit-content;
   height: 160px;
 }
 
