@@ -151,6 +151,12 @@ ul {
   gap: 64px;
 }
 
+.nav__item:nth-of-type(4n)::after,
+.nav__item:nth-of-type(5n)::after {
+  content: url('../icons/expand_down_icon.svg');
+  padding-left: 7px;
+}
+
 .nav__item--active {
   font-weight: 600;
 }
@@ -197,8 +203,8 @@ ul {
   opacity: 1;
 }
 
-.nav__dropdown-item {
-  padding-top: 8px;
+.nav__item-dropdown {
+  padding-top: 10px;
 }
 /* -------------------------------- */
 
@@ -534,11 +540,11 @@ ul {
 }
 
 .icon-arrow-down::after {
-  content: url('../icons/accordion_expand_down_icon.svg');
+  content: url('../icons/expand_down_icon.svg');
 }
 
 .icon-arrow-up::after {
-  content: url('../icons/accordion_expand_up_icon.svg');
+  content: url('../icons/expand_up_icon.svg');
 }
 
 .section-choose-us__item-description {
