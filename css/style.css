@@ -121,6 +121,11 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.debug {
+  border: 1px solid green;
+  color: greenyellow;
+}
 /* -------------------------------- */
 
 /* -------- Header --------  */
@@ -209,14 +214,15 @@ ul {
 /* -------------------------------- */
 
 /* -------- Main -------- */
-.main {
+/* .main {
   padding: 13px 0 64px 0;
-}
+} */
 
 /* -- Section Hero -- */
 .section-hero {
   margin-bottom: 0;
-  padding: 0 120px;
+  /* padding: 0 120px; */
+  padding: 13px 120px 120px;
 
   background: url('../img/background/bg-light-section-hero.svg') no-repeat right 50%;
 }
@@ -834,7 +840,7 @@ ul {
 
 /* -- Section Our trusted partners -- */
 .section-partners {
-  padding: 150px 193px 0 193px;
+  padding: 150px 192px 0 192px;
 }
 
 .section-partners__inner {
@@ -1302,5 +1308,79 @@ ul {
   border-top: 1px solid #eee;
   border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
   border-image-slice: 1;
+}
+/* -------------------------------- */
+
+/* -- Section title -- */
+.section-title {
+  height: 296px;
+  padding: 0 120px;
+}
+
+.section-title__inner {
+  margin: 0 auto;
+  width: 1200px;
+}
+/* -------------------------------- */
+
+/* -- Section about detailed -- */
+.section-about-detailed {
+  /* height: 606px; */
+  padding: 150px 0 0 120px;
+}
+
+.section-about-detailed__inner {
+  display: flex;
+
+  width: 1326px;
+  margin: 0 auto;
+}
+/* -------------------------------- */
+
+/* -- Section benefits detailed -- */
+.section-benefits-detailed {
+  padding: 150px 120px 0 120px;
+}
+
+.section-benefits-detailed__inner {
+  max-width: 1200px;
+  height: 560px;
+  margin: 0 auto;
+}
+/* -------------------------------- */
+
+/* -- Section choose detailed -- */
+.section-choose-detailed {
+  padding: 150px 162px 0 110px;
+}
+
+.section-choose-detailed__inner {
+  max-width: 1168px;
+  height: 626px;
+  margin: 0 auto;
+}
+/* -------------------------------- */
+
+/* -- Section team preview -- */
+.section-team-preview {
+  padding: 150px 120px 0 120px;
+}
+
+.section-team-preview__inner {
+  max-width: 1200px;
+  height: 520px;
+  margin: 0 auto;
+}
+/* -------------------------------- */
+
+/* -- Section faq -- */
+.section-faq {
+  padding: 150px 325px 0 325px;
+}
+
+.section-faq__inner {
+  max-width: 790px;
+  height: 800px;
+  margin: 0 auto;
 }
 /* -------------------------------- */

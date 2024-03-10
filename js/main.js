@@ -5,7 +5,7 @@
 let DEFAULT_DIAMETER_MAX = 1247
 let DEFAULT_DIAMETER_MIN = 391
 
-let diameterMax = document.querySelector('.section-testimonial__inner').offsetWidth
+let diameterMax = document.querySelector('.section-testimonial__inner')?.offsetWidth
 diameterMax = diameterMax < DEFAULT_DIAMETER_MAX ? DEFAULT_DIAMETER_MAX : diameterMax
 
 const circleItemsTestimonial = document.querySelectorAll('.list-circle__item')
@@ -30,7 +30,7 @@ drawCircles(circleItemsTestimonial)
 DEFAULT_DIAMETER_MAX = 1054
 DEFAULT_DIAMETER_MIN = 453
 
-diameterMax = document.querySelector('.section-partners__inner').offsetWidth
+diameterMax = document.querySelector('.section-partners__inner')?.offsetWidth
 diameterMax = diameterMax < DEFAULT_DIAMETER_MAX ? DEFAULT_DIAMETER_MAX : diameterMax
 
 const circleItemsPartners = document.querySelectorAll('.list-half-circle__item')
@@ -94,7 +94,7 @@ const handleAccordionClick = (event) => {
 }
 
 const animateAccordion = (accordion) =>
-  accordion.addEventListener('click', (event) => {
+  accordion?.addEventListener('click', (event) => {
     handleAccordionClick(event)
   })
 
