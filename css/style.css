@@ -221,6 +221,7 @@ ul {
 /* -- Section Hero -- */
 .section-hero {
   margin-bottom: 0;
+
   /* padding: 0 120px; */
   padding: 13px 120px 120px;
 
@@ -361,7 +362,6 @@ ul {
 .section-about__video {
   position: absolute;
   left: 386px;
-
   bottom: 0;
 }
 
@@ -579,7 +579,6 @@ ul {
 .section-choose-us__video {
   position: absolute;
   right: 102px;
-
   bottom: 0;
 }
 
@@ -1325,15 +1324,54 @@ ul {
 
 /* -- Section about detailed -- */
 .section-about-detailed {
-  /* height: 606px; */
   padding: 150px 0 0 120px;
 }
 
 .section-about-detailed__inner {
-  display: flex;
+  position: relative;
 
-  width: 1326px;
+  display: flex;
+  justify-content: space-between;
+  width: 1320px;
+  height: 606px;
   margin: 0 auto;
+}
+
+.section-about-detailed__text-container {
+  max-width: 708px;
+  height: 475px;
+  padding-top: 40px;
+}
+
+.section-about-detailed__header {
+  margin-bottom: 18px;
+}
+
+.section-about-detailed__description {
+  max-width: 625px;
+
+  color: var(--greyscale-grey-2);
+}
+
+.section-about-detailed__img-container {
+  align-self: flex-start;
+  padding-right: 168px;
+
+  background: url('../img/background/bg-light-section-about.svg') no-repeat,
+    url('../img/background/bg-rectangle.svg') no-repeat left 17px top 76px;
+}
+
+.section-about-detailed__img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.section-about-detailed__video {
+  position: absolute;
+  bottom: 0;
+
+  right: 450px;
 }
 /* -------------------------------- */
 
