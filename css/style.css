@@ -513,7 +513,7 @@ ul {
 }
 
 .section-choose-us__text-container {
-  margin-top: 94px;
+  padding-top: 94px;
   max-width: 548px;
   height: 515px;
 }
@@ -1401,10 +1401,35 @@ ul {
 }
 
 .section-choose-detailed__inner {
+  position: relative;
+
+  display: flex;
+  gap: 80px;
   max-width: 1168px;
   height: 626px;
   margin: 0 auto;
 }
+
+.section-choose-detailed__container {
+  padding-top: 67px;
+}
+
+.section-choose-detailed__img-container {
+  align-self: flex-start;
+  margin-left: 40px;
+  max-width: 500px;
+  height: 574px;
+
+  background: url('../img/background/bg-light-section-choose.svg') no-repeat center / cover,
+    url('../img/background/bg-rectangle.svg') no-repeat left 15px bottom;
+}
+
+.section-choose-detailed__video {
+  position: absolute;
+  left: 327px;
+  bottom: 0;
+}
+
 /* -------------------------------- */
 
 /* -- Section team preview -- */
