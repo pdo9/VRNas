@@ -542,13 +542,13 @@ ul {
 }
 
 .section-choose-us__item {
-  position: relative;
-
   margin-bottom: 48px;
   width: 100%;
 }
 
 .section-choose-us__item-caption {
+  position: relative;
+
   padding-bottom: 12px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
@@ -1524,7 +1524,58 @@ ul {
 
 .section-faq__inner {
   max-width: 790px;
-  height: 800px;
+  /* height: 800px; */
   margin: 0 auto;
 }
+
+.section-faq__header-container {
+  padding: 0 13px;
+  margin-bottom: 48px;
+
+  text-align: center;
+}
+
+.section-faq__header {
+  margin-bottom: 24px;
+}
+
+.section-faq__description {
+  color: var(--greyscale-grey-2);
+}
+
+.section-faq__item {
+  padding: 24px 24px 32px 24px;
+
+  background: rgba(37, 37, 50, 0.81);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.section-faq__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.section-faq__item-caption {
+  position: relative;
+
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.section-faq__item-text {
+  padding-top: 12px;
+
+  color: var(--greyscale-grey-2);
+}
+
+.section-faq__item-caption:hover {
+  cursor: pointer;
+}
+
+.section-faq__item-caption::after {
+  position: absolute;
+  right: 0;
+  top: -3px;
+}
+
 /* -------------------------------- */

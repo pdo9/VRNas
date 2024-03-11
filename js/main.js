@@ -48,6 +48,8 @@ const ACCORDION_CONTAINER_CLASS = 'section-choose-us__list'
 const ACCORDION_HEADER_CLASS = 'section-choose-us__item-caption'
 const ACCORDION_HIDDEN_CLASS = 'section-choose-us__item-description'
 const ACCORDION_TOGGLE_CLASS = 'accordion-hide'
+const ICON_ARROW_UP_CLASS = 'icon-arrow-up'
+const ICON_ARROW_DOWN_CLASS = 'icon-arrow-down'
 
 let accordion = document.querySelector('.' + ACCORDION_CONTAINER_CLASS)
 let accordionHeaderList = document.querySelectorAll('.' + ACCORDION_HEADER_CLASS)
@@ -59,19 +61,17 @@ const toggleAccordionContent = (element) => {
 }
 
 const toggleArrowIcon = (element) => {
-  let arrowDownClass = 'icon-arrow-down'
-  let arrowUpClass = 'icon-arrow-up'
   if (!element.classList.contains(ACCORDION_HEADER_CLASS)) return
 
-  if (element.classList.contains(arrowDownClass)) {
-    element.classList.remove(arrowDownClass)
-    element.classList.add(arrowUpClass)
+  if (element.classList.contains(ICON_ARROW_DOWN_CLASS)) {
+    element.classList.remove(ICON_ARROW_DOWN_CLASS)
+    element.classList.add(ICON_ARROW_UP_CLASS)
     return
   }
 
-  if (element.classList.contains(arrowUpClass)) {
-    element.classList.remove(arrowUpClass)
-    element.classList.add(arrowDownClass)
+  if (element.classList.contains(ICON_ARROW_UP_CLASS)) {
+    element.classList.remove(ICON_ARROW_UP_CLASS)
+    element.classList.add(ICON_ARROW_DOWN_CLASS)
     return
   }
 }
@@ -89,6 +89,10 @@ const handleAccordionClick = (event) => {
 
     filteredAccordionHeaderList.forEach((element) => {
       element.nextElementSibling.classList.add(ACCORDION_TOGGLE_CLASS)
+
+      if (element.classList.contains(ICON_ARROW_UP_CLASS)) {
+        toggleArrowIcon(element)
+      }
     })
   }
 }
@@ -99,4 +103,24 @@ const animateAccordion = (accordion) =>
   })
 
 animateAccordion(accordion)
+/* -------------------------------- */
+
+/* -------------------------------- */
+/* Анимированная градиентная граница
+   при наведении на элементы с определенным классом */
+
+const GRADIENT_BORDER_CLASS = 'animated-gradient-border'
+
+const teamPreviewItem = document.querySelectorAll('.section-team-preview__item')
+
+teamPreviewItem.forEach((element) => {
+  element.classList.add(GRADIENT_BORDER_CLASS)
+})
+
+const faqItem = document.querySelectorAll('.section-faq__item')
+
+faqItem.forEach((element) => {
+  element.classList.add(GRADIENT_BORDER_CLASS)
+})
+
 /* -------------------------------- */
