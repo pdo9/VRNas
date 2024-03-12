@@ -111,7 +111,7 @@ animateAccordion(accordion)
 
 const GRADIENT_BORDER_CLASS = 'animated-gradient-border'
 
-const teamPreviewItem = document.querySelectorAll('.section-team-preview__item')
+const teamPreviewItem = document.querySelectorAll('.section-team-preview__img-box')
 
 teamPreviewItem.forEach((element) => {
   element.classList.add(GRADIENT_BORDER_CLASS)
