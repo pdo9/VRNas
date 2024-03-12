@@ -1,4 +1,4 @@
-/* -------- Share -------- */
+/* -- Shared -- */
 @import './fonts.css';
 
 :root {
@@ -122,6 +122,12 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
+.grey-gradient-border {
+  border: 2px solid #000;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
+  border-image-slice: 1;
+}
+
 .animated-gradient-border:hover,
 .animated-gradient-border:active {
   border: 2px solid #000;
@@ -147,7 +153,7 @@ ul {
 }
 /* -------------------------------- */
 
-/* -------- Header --------  */
+/* -- Header --  */
 .header {
   padding: 0 120px;
 }
@@ -232,16 +238,10 @@ ul {
 }
 /* -------------------------------- */
 
-/* -------- Main -------- */
-/* .main {
-  padding: 13px 0 64px 0;
-} */
-
 /* -- Section Hero -- */
 .section-hero {
   margin-bottom: 0;
 
-  /* padding: 0 120px; */
   padding: 13px 120px 0 120px;
 
   background: url('../img/background/bg-light-section-hero.svg') no-repeat right 50%;
@@ -654,7 +654,7 @@ ul {
   left: 50%;
 
   width: 628px;
-  margin-top: 111px;
+  padding-top: 111px;
   height: 91px;
 
   text-align: center;
@@ -776,7 +776,7 @@ ul {
 }
 
 .section-pricing__list {
-  width: 758px;
+  width: 800px;
   padding: 55px 0 0 42px;
 
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -802,7 +802,7 @@ ul {
 }
 
 .section-pricing__img {
-  margin-top: 67px;
+  padding-top: 67px;
 }
 
 .section-pricing__light-effect {
@@ -979,7 +979,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 120px;
+  padding-left: 120px;
   max-width: 1426px;
   height: 768px;
 }
@@ -988,7 +988,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-right: 120px;
   margin-bottom: 42px;
   max-width: 1200px;
   height: 91px;
@@ -1225,20 +1224,19 @@ ul {
 }
 /* -------------------------------- */
 
-/* -------- Footer -------- */
-.footer {
+/* -- Footer -- */
+.footer__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   max-width: 1440px;
   height: 508px;
+  padding: 118px 118px 47px 120px;
 }
 
 .footer__menu {
   display: flex;
   justify-content: space-between;
-
-  margin: 116px 118px 33px 122px;
+  margin-bottom: 32px;
   width: 1200px;
   height: 250px;
 }
@@ -1285,7 +1283,7 @@ ul {
 }
 
 .footer__list li:not(:last-child) {
-  margin: 16px 0 16px 0;
+  margin: 16px 0;
 }
 
 .footer__address {
@@ -1319,9 +1317,8 @@ ul {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin: 0 118px 47px 122px;
-  width: 1200px;
-  height: 60px;
+  padding-top: 32px;
+  width: 100%;
 
   border-top: 1px solid #eee;
   border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
@@ -1521,7 +1518,7 @@ ul {
   height: 388px;
 
   background: rgba(37, 37, 50, 0.6);
-  border: 2px solid var(--greyscale-black-80);
+  /* border: 2px solid var(--greyscale-black-80); */
 }
 
 .section-team-preview__img {
@@ -1574,7 +1571,6 @@ ul {
   padding: 24px 24px 32px 24px;
 
   background: rgba(37, 37, 50, 0.81);
-  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .section-faq__item:not(:last-child) {
