@@ -352,7 +352,8 @@ ul {
 
 /* -- Section About us -- */
 .section-about {
-  padding: 120px 120px 0 82px;
+  /* padding: 120px 120px 0 82px; */
+  padding: 120px 120px 150px 82px;
 }
 
 .section-about__inner {
@@ -427,7 +428,8 @@ ul {
 
 /* -- Section Our service -- */
 .section-service {
-  padding: 120px 120px 0 120px;
+  /* padding: 120px 120px 0 120px; */
+  padding: 0 120px;
 }
 
 .section-service__inner {
@@ -1328,7 +1330,8 @@ ul {
 
 /* -- Section title -- */
 .section-title {
-  padding: 80px 120px 0 120px;
+  /* padding: 80px 120px 0 120px; */
+  padding: 80px 120px 150px 120px;
 
   background: url('../img/background/bg-light-section-title.svg') no-repeat center / contain;
 }
@@ -1366,7 +1369,8 @@ ul {
 
 /* -- Section about detailed -- */
 .section-about-detailed {
-  padding: 150px 0 0 120px;
+  /* padding: 150px 0 0 120px; */
+  padding: 0 0 0 120px;
 }
 
 .section-about-detailed__inner {
