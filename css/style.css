@@ -1002,27 +1002,23 @@
 }
 
 .section-subscribe__inner {
-  max-width: 1200px;
-  height: 185px;
-}
-
-.subscribe {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 0 74px 0 74px;
+  padding: 38px 74px 31px 74px;
+  height: 185px;
 
   background: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
 }
 
-.subscribe__header {
+.section-subscribe__header {
   max-width: 520px;
 
   user-select: none;
 }
 
-.subscribe__form {
+.section-subscribe__form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1034,15 +1030,15 @@
   background: rgba(255, 255, 255, 0.07);
 }
 
-.subscribe__form:focus-within {
+.section-subscribe__form:focus-within {
   outline: 1px solid var(--main-colors-blue);
 }
 
-.subscribe__form:hover {
+.section-subscribe__form:hover {
   outline: 1px solid var(--main-colors-blue);
 }
 
-.subscribe__input {
+.section-subscribe__input {
   padding-left: 46px;
   width: calc(100% - 49px);
   height: 100%;
@@ -1053,23 +1049,23 @@
   background: url('../icons/mail_icon.svg') no-repeat left 14px center;
 }
 
-.subscribe__input::placeholder {
+.section-subscribe__input::placeholder {
   color: var(--greyscale-white);
 
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-.subscribe__input:focus {
+.section-subscribe__input:focus {
   outline: none;
 }
 
-.subscribe__input:focus::placeholder {
+.section-subscribe__input:focus::placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.subscribe__btn {
+.section-subscribe__btn {
   width: 49px;
   height: 49px;
   padding: 3px;
@@ -1081,11 +1077,11 @@
   background: url('../icons/send_bg_icon.svg') no-repeat center, url('../icons/send_icon.svg') no-repeat center;
 }
 
-.subscribe__btn:hover {
+.section-subscribe__btn:hover {
   background-color: #ea43ea;
 }
 
-.subscribe__btn:active {
+.section-subscribe__btn:active {
   background-color: #d034d0;
 }
 /* -------------------------------- */
