@@ -1475,3 +1475,21 @@
   top: -3px;
 }
 /* -------------------------------- */
+
+/* -- Section facts -- */
+.section-facts {
+  padding: 60px 264px;
+
+  background: url('../img/background/bg-light-section-facts.svg') no-repeat center;
+}
+
+.section-facts__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-facts__item {
+  display: block;
+  text-align: center;
+}
+/* -------------------------------- */
