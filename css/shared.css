@@ -1,0 +1,167 @@
+/* -- Shared -- */
+:root {
+  --font-family: 'Chakra Petch', sans-serif;
+  --main-colors-blue: #0cbaf1;
+  --main-colors-purple: #e95ce9;
+  --greyscale-black-100: #18181b;
+  --greyscale-black-80: #252532;
+  --greyscale-grey-1: #b0b0b2;
+  --greyscale-grey-2: #d1d1d1;
+  --greyscale-white: #fff;
+  --alerts-success: #00c566;
+  --alerts-error: #ff4747;
+  --alerts-warning: #facc15;
+
+  --avatar-border-offset: 13px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--greyscale-black-100);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.page {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+
+  background: url('../img/background/bg-lines.svg') no-repeat top right,
+    url('../img/background/bg-lines-footer.svg') no-repeat left bottom,
+    url('../img/background/bg-grid.svg') no-repeat left top 274px,
+    url('../img/background/bg-grid-footer.svg') no-repeat left bottom 617px,
+    url('../img/background/bg-light-section-service.svg') no-repeat left 850px top 1800px;
+}
+
+.btn-transparent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 126px;
+  min-height: 52px;
+  padding: 0 5px;
+
+  border: 2px solid #000;
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
+  border-image-slice: 1;
+}
+
+.btn-transparent:hover,
+.btn-transparent:active {
+  animation: gradient-border 2s ease-out infinite;
+  -webkit-animation: gradient-border 2s ease-out infinite;
+  -moz-animation: gradient-border 2s ease-out infinite;
+  background-color: var(--greyscale-black-80);
+}
+
+@keyframes gradient-border {
+  50% {
+    border-image: linear-gradient(to left, var(--main-colors-blue), var(--main-colors-purple));
+    border-image-slice: 1;
+  }
+}
+
+.btn-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 206px;
+  min-height: 50px;
+  padding: 0 5px;
+
+  background: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
+
+  transition: 0.3s ease;
+}
+
+.btn-gradient:hover,
+.btn-gradient:active {
+  background: transparent;
+
+  border: 2px solid #000;
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
+  border-image-slice: 1;
+
+  animation: gradient-border 2s ease-out infinite;
+  background-color: var(--greyscale-black-80);
+}
+
+.video-frame {
+  width: 192px;
+  height: 128px;
+  border: 0;
+}
+
+.text-gradient {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  background: var(--main-colors-blue);
+  background: linear-gradient(to right, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grey-gradient-border {
+  border: 2px solid #000;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
+  border-image-slice: 1;
+}
+
+.animated-gradient-border:hover,
+.animated-gradient-border:active {
+  border: 2px solid #000;
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
+  border-image-slice: 1;
+
+  animation: gradient-border-animation 2s ease-out infinite;
+  -webkit-animation: gradient-border-animation 2s ease-out infinite;
+  -moz-animation: gradient-border-animation 2s ease-out infinite;
+  background-color: var(--greyscale-black-80);
+}
+
+@keyframes gradient-border-animation {
+  50% {
+    border-image: linear-gradient(to left, var(--main-colors-blue), var(--main-colors-purple));
+    border-image-slice: 1;
+  }
+}
+
+.container-rl120 {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.container-tb150 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.container-tb100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.debug {
+  border: 1px solid green;
+  color: greenyellow;
+}
+/* -------------------------------- */

@@ -1,162 +1,10 @@
-/* -- Shared -- */
 @import './fonts.css';
-
-:root {
-  --font-family: 'Chakra Petch', sans-serif;
-  --main-colors-blue: #0cbaf1;
-  --main-colors-purple: #e95ce9;
-  --greyscale-black-100: #18181b;
-  --greyscale-black-80: #252532;
-  --greyscale-grey-1: #b0b0b2;
-  --greyscale-grey-2: #d1d1d1;
-  --greyscale-white: #fff;
-  --alerts-success: #00c566;
-  --alerts-error: #ff4747;
-  --alerts-warning: #facc15;
-
-  --avatar-border-offset: 13px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-family);
-  background-color: var(--greyscale-black-100);
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.page {
-  max-width: 1440px;
-  height: 100%;
-  margin: 0 auto;
-
-  background: url('../img/background/bg-lines.svg') no-repeat top right,
-    url('../img/background/bg-lines-footer.svg') no-repeat left bottom,
-    url('../img/background/bg-grid.svg') no-repeat left top 274px,
-    url('../img/background/bg-grid-footer.svg') no-repeat left bottom 617px,
-    url('../img/background/bg-light-section-service.svg') no-repeat left 850px top 1800px;
-}
-
-.btn-transparent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 126px;
-  min-height: 52px;
-  padding: 0 5px;
-
-  border: 2px solid #000;
-  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
-  border-image-slice: 1;
-}
-
-.btn-transparent:hover,
-.btn-transparent:active {
-  animation: gradient-border 2s ease-out infinite;
-  -webkit-animation: gradient-border 2s ease-out infinite;
-  -moz-animation: gradient-border 2s ease-out infinite;
-  background-color: var(--greyscale-black-80);
-}
-
-@keyframes gradient-border {
-  50% {
-    border-image: linear-gradient(to left, var(--main-colors-blue), var(--main-colors-purple));
-    border-image-slice: 1;
-  }
-}
-
-.btn-gradient {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 206px;
-  min-height: 50px;
-  padding: 0 5px;
-
-  background: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
-
-  transition: 0.3s ease;
-}
-
-.btn-gradient:hover,
-.btn-gradient:active {
-  background: transparent;
-
-  border: 2px solid #000;
-  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
-  border-image-slice: 1;
-
-  animation: gradient-border 2s ease-out infinite;
-  background-color: var(--greyscale-black-80);
-}
-
-.video-frame {
-  width: 192px;
-  height: 128px;
-  border: 0;
-}
-
-.text-gradient {
-  display: inline-block;
-  margin-bottom: 12px;
-
-  background: var(--main-colors-blue);
-  background: linear-gradient(to right, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.grey-gradient-border {
-  border: 2px solid #000;
-  border-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
-  border-image-slice: 1;
-}
-
-.animated-gradient-border:hover,
-.animated-gradient-border:active {
-  border: 2px solid #000;
-  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
-  border-image-slice: 1;
-
-  animation: gradient-border-animation 2s ease-out infinite;
-  -webkit-animation: gradient-border-animation 2s ease-out infinite;
-  -moz-animation: gradient-border-animation 2s ease-out infinite;
-  background-color: var(--greyscale-black-80);
-}
-
-@keyframes gradient-border-animation {
-  50% {
-    border-image: linear-gradient(to left, var(--main-colors-blue), var(--main-colors-purple));
-    border-image-slice: 1;
-  }
-}
-
-.debug {
-  border: 1px solid green;
-  color: greenyellow;
-}
-/* -------------------------------- */
+@import './shared.css';
 
 /* -- Header --  */
-.header {
+/* .header {
   padding: 0 120px;
-}
+} */
 
 .header__inner {
   display: flex;
@@ -240,9 +88,9 @@ ul {
 
 /* -- Section Hero -- */
 .section-hero {
-  margin-bottom: 0;
-
-  padding: 13px 120px 0 120px;
+  /* margin-bottom: 0; */
+  /* padding: 13px 120px 0 120px; */
+  padding-top: 13px;
 
   background: url('../img/background/bg-light-section-hero.svg') no-repeat right 50%;
 }
@@ -313,7 +161,7 @@ ul {
 
 /* -- Section Benefits -- */
 .section-benefits {
-  padding: 0 120px;
+  /* padding: 0 120px; */
 }
 
 .section-benefits__inner {
@@ -353,7 +201,10 @@ ul {
 /* -- Section About us -- */
 .section-about {
   /* padding: 120px 120px 0 82px; */
-  padding: 120px 120px 150px 82px;
+  /* padding: 120px 120px 150px 82px; */
+  /* padding: 120px 120px 0 82px; */
+  padding-left: 82px;
+  padding-right: 120px;
 }
 
 .section-about__inner {
@@ -429,7 +280,9 @@ ul {
 /* -- Section Our service -- */
 .section-service {
   /* padding: 120px 120px 0 120px; */
-  padding: 0 120px;
+  /* padding: 0 120px; */
+  /* padding: 150px 120px 0 120px; */
+  /* padding-top: 150px; */
 }
 
 .section-service__inner {
@@ -521,7 +374,10 @@ ul {
 
 /* -- Section Why choose us  -- */
 .section-choose-us {
-  padding: 150px 19px 0 120px;
+  /* padding: 150px 19px 150px 120px; */
+  /* padding: 0 19px 0 120px; */
+  padding-left: 120px;
+  padding-right: 19px;
 }
 
 .section-choose-us__inner {
@@ -605,7 +461,7 @@ ul {
 
 /* -- Section How to get started  -- */
 .section-start {
-  padding: 150px 120px 0 120px;
+  /* padding: 0 120px 100px 120px; */
 }
 
 .section-start__inner {
@@ -637,7 +493,10 @@ ul {
 
 /* -- Section Testimonial  -- */
 .section-testimonial {
-  padding: 100px 96px 0 96px;
+  /* padding: 100px 96px 0 96px; */
+  /* padding: 0 96px; */
+  padding-left: 96px;
+  padding-right: 96px;
 }
 
 .section-testimonial__inner {
@@ -740,7 +599,9 @@ ul {
 
 /* -- Section Our pricing  -- */
 .section-pricing {
-  padding: 100px 67px 0 120px;
+  /* padding: 100px 67px 0 120px; */
+  padding-left: 120px;
+  padding-right: 67px;
 }
 
 .section-pricing__inner {
@@ -860,7 +721,9 @@ ul {
 
 /* -- Section Our trusted partners -- */
 .section-partners {
-  padding: 150px 192px 0 192px;
+  /* padding: 150px 192px 0 192px; */
+  padding-left: 192px;
+  padding-right: 192px;
 }
 
 .section-partners__inner {
@@ -972,7 +835,8 @@ ul {
 
 /* -- Section Our articles  -- */
 .section-articles {
-  padding: 150px 0 0 14px;
+  /* padding: 150px 0 0 14px; */
+  padding-left: 14px;
 
   background: url('../img/background/bg-light-section-articles.svg') no-repeat;
 }
@@ -1330,8 +1194,8 @@ ul {
 
 /* -- Section title -- */
 .section-title {
-  /* padding: 80px 120px 0 120px; */
-  padding: 80px 120px 150px 120px;
+  padding: 80px 120px 0 120px;
+  /* padding: 80px 120px 150px 120px; */
 
   background: url('../img/background/bg-light-section-title.svg') no-repeat center / contain;
 }
@@ -1370,7 +1234,8 @@ ul {
 /* -- Section about detailed -- */
 .section-about-detailed {
   /* padding: 150px 0 0 120px; */
-  padding: 0 0 0 120px;
+  padding-left: 120px;
+  /* padding-bottom: 150px; */
 }
 
 .section-about-detailed__inner {
@@ -1423,7 +1288,7 @@ ul {
 
 /* -- Section benefits detailed -- */
 .section-benefits-detailed {
-  padding: 150px 120px 0 120px;
+  /* padding: 150px 120px 0 120px; */
 }
 
 .section-benefits-detailed__inner {
@@ -1443,7 +1308,10 @@ ul {
 
 /* -- Section choose detailed -- */
 .section-choose-detailed {
-  padding: 150px 162px 0 110px;
+  /* padding: 150px 162px 0 110px; */
+  /* padding: 150px 162px 0 110px; */
+  padding-left: 110px;
+  padding-right: 162px;
 }
 
 .section-choose-detailed__inner {
@@ -1479,7 +1347,7 @@ ul {
 
 /* -- Section team preview -- */
 .section-team-preview {
-  padding: 150px 120px 0 120px;
+  /* padding: 150px 120px 0 120px; */
 }
 
 .section-team-preview__inner {
@@ -1546,7 +1414,9 @@ ul {
 
 /* -- Section faq -- */
 .section-faq {
-  padding: 150px 325px 0 325px;
+  /* padding: 150px 325px 0 325px; */
+  padding-left: 325px;
+  padding-right: 325px;
 
   background: url('../img/background/bg-light-section-faq.svg') no-repeat right top 10% / 45%;
 }
