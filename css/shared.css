@@ -50,6 +50,18 @@ ul {
     url('../img/background/bg-light-section-service.svg') no-repeat left 850px top 1800px;
 }
 
+.color-grey-1 {
+  color: var(--greyscale-grey-1);
+}
+
+.color-grey-2 {
+  color: var(--greyscale-grey-2);
+}
+
+.color-white {
+  color: var(--greyscale-white);
+}
+
 .btn-transparent {
   display: flex;
   justify-content: center;

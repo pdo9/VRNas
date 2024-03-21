@@ -258,8 +258,6 @@
 
 .section-about__list {
   margin-bottom: 32px;
-
-  color: var(--greyscale-white);
 }
 
 .section-about__item:not(:last-child) {
@@ -1487,5 +1485,52 @@
 .section-facts__item {
   display: block;
   text-align: center;
+}
+/* -------------------------------- */
+
+/* -- Section pricing plan -- */
+.section-pricing-plan {
+  padding-top: 150px;
+}
+
+.section-pricing-plan__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-pricing-plan__header-container {
+  max-width: 750px;
+  text-align: center;
+  margin: 0 auto;
+  /* padding: 0 225px; */
+}
+
+.section-pricing-plan__header-description {
+  padding-top: 16px;
+  color: var(--greyscale-grey-2);
+}
+
+.section-pricing-plan__list {
+  display: flex;
+  gap: 62px;
+  padding-top: 40px;
+}
+
+.section-pricing-plan__item {
+  padding: 35px 59px 39px 35px;
+  width: 359px;
+
+  border-radius: 6px;
+  background: var(--greyscale-black-80);
+}
+
+.section-pricing-plan__benefit-list {
+  padding: 16px 26px 36px 0;
+}
+
+.section-pricing-plan__btn {
+  padding: 5px;
+  width: 292px;
+  height: 55px;
 }
 /* -------------------------------- */
