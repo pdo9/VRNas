@@ -943,31 +943,6 @@
   justify-content: space-between;
 }
 
-.article-description__hashtag {
-  padding: 2px 10px;
-  width: fit-content;
-  height: 24px;
-
-  text-align: center;
-
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.article-description__hashtag--small {
-  padding: 1px 7px;
-  height: 16px;
-}
-
-.article-description__hashtag--block {
-  display: block;
-}
-
-.article-description__hashtag:hover,
-.article-description__hashtag:active {
-  background: rgba(200, 200, 200, 0.2);
-}
-
 .slider__item-btn {
   width: 40px;
   min-height: 40px;
@@ -1314,9 +1289,6 @@
 /* -------------------------------- */
 
 /* -- Section team preview -- */
-.section-team-preview {
-}
-
 .section-team-preview__inner {
   max-width: 1200px;
   height: 520px;

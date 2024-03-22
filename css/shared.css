@@ -163,6 +163,31 @@ ul {
   }
 }
 
+.hashtag {
+  padding: 2px 10px;
+  width: fit-content;
+  height: 24px;
+
+  text-align: center;
+
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.hashtag--small {
+  padding: 1px 7px;
+  height: 16px;
+}
+
+.hashtag--block {
+  display: block;
+}
+
+.hashtag:hover,
+.hashtag:active {
+  background: rgba(200, 200, 200, 0.2);
+}
+
 .container-rl120 {
   padding-left: 120px;
   padding-right: 120px;
