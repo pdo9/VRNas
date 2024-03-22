@@ -1507,7 +1507,9 @@
 
 .section-pricing-plan__header-description {
   padding-top: 16px;
+
   color: var(--greyscale-grey-2);
+  line-height: 24px;
 }
 
 .section-pricing-plan__list {
@@ -1516,8 +1518,20 @@
   padding-top: 40px;
 }
 
+.section-pricing-plan__price-caption {
+  margin-bottom: 9px;
+}
+
+.section-pricing-plan__price-value {
+  margin-bottom: 9px;
+}
+
+.section-pricing-plan__price-description {
+  line-height: 24px;
+}
+
 .section-pricing-plan__item {
-  padding: 35px 59px 39px 35px;
+  padding: 35px 56px 39px 35px;
   width: 359px;
 
   border-radius: 6px;
@@ -1525,7 +1539,19 @@
 }
 
 .section-pricing-plan__benefit-list {
-  padding: 16px 26px 36px 0;
+  padding: 16px 24px 36px 0;
+}
+
+.section-pricing-plan__benefit-item {
+  margin-bottom: 16px;
+
+  line-height: 22px;
+}
+
+.section-pricing-plan__benefit-item::before {
+  content: url('../icons/pricing-plan-benefit-item-icon.svg');
+  padding-right: 8px;
+  vertical-align: middle;
 }
 
 .section-pricing-plan__btn {
@@ -1533,4 +1559,5 @@
   width: 292px;
   height: 55px;
 }
+
 /* -------------------------------- */

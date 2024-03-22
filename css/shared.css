@@ -138,6 +138,12 @@ ul {
   border-image-slice: 1;
 }
 
+.gradient-border {
+  border: 2px solid #000;
+  border-image: linear-gradient(to right, var(--main-colors-blue), var(--main-colors-purple));
+  border-image-slice: 1;
+}
+
 .animated-gradient-border:hover,
 .animated-gradient-border:active {
   border: 2px solid #000;

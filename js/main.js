@@ -122,5 +122,4 @@ const faqItem = document.querySelectorAll('.section-faq__item')
 faqItem.forEach((element) => {
   element.classList.add(GRADIENT_BORDER_CLASS)
 })
-
 /* -------------------------------- */
