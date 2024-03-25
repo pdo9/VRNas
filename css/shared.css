@@ -163,6 +163,67 @@ ul {
   }
 }
 
+.teammate-box {
+  position: relative;
+
+  background: rgba(37, 37, 50, 0.6);
+}
+
+.teammate-box:hover .teammate-box__socials {
+  opacity: 1;
+}
+
+.teammate-box__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.teammate-box__img-background {
+  z-index: 2;
+
+  background: linear-gradient(180deg, #3246bc, #192883);
+  opacity: 0.4;
+}
+
+.teammate-box__caption {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  z-index: 2;
+  transform: translateX(-50%);
+
+  text-align: center;
+}
+
+.teammate-box__socials {
+  position: absolute;
+  left: 50%;
+  bottom: 96px;
+  z-index: 2;
+  transform: translateX(-50%);
+
+  width: 186px;
+
+  background-color: transparent;
+  opacity: 0;
+
+  transition: 0.3s linear;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+}
+
 .hashtag {
   padding: 2px 10px;
   width: fit-content;
