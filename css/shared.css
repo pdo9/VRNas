@@ -249,6 +249,19 @@ ul {
   background: rgba(200, 200, 200, 0.2);
 }
 
+.vr-user-background {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-top: 150px;
+}
+
+.vr-user-background__img {
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 95%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 95%);
+}
+
 .container-rl120 {
   padding-left: 120px;
   padding-right: 120px;

@@ -1065,8 +1065,6 @@
   height: 213px;
 }
 
-
-
 .footer__nav {
   display: flex;
   justify-content: space-between;
@@ -1320,10 +1318,7 @@
 /* -------------------------------- */
 
 /* -- Section faq -- */
-.section-faq {
-  padding-left: 325px;
-  padding-right: 325px;
-
+.section-faq__background {
   background: url('../img/background/bg-light-section-faq.svg') no-repeat right top 10% / 45%;
 }
 
