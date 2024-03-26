@@ -1666,3 +1666,59 @@
   margin-bottom: 32px;
 }
 /* -------------------------------- */
+
+/* -- Section 404page -- */
+.section-404page {
+  padding-top: 87px;
+}
+
+.section-404page__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.section-404page__description:last-of-type {
+  margin-bottom: 24px;
+}
+
+.section-404page__header-container {
+  max-width: 625px;
+}
+
+.section-404page__header {
+  margin-bottom: 16px;
+}
+
+.section-404page__btn {
+  width: 168px;
+  min-height: 50px;
+}
+
+.section-404page__img-container {
+  position: relative;
+
+  width: 698px;
+  height: 508px;
+
+  background: url('../img/background/bg-light-section-testimonial.svg') no-repeat center / 110%,
+    url('../img/background/bg-ellipse-solid.svg') no-repeat center;
+}
+
+.section-404page__img1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.section-404page__img2 {
+  position: absolute;
+  left: 51%;
+  top: 32.6%;
+
+  transform: translate(-50%, -50%);
+}
+/* -------------------------------- */
