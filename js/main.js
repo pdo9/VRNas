@@ -42,6 +42,23 @@ drawCircles(circleItemsPartners)
 /* -------------------------------- */
 
 /* -------------------------------- */
+/* Концентрические круги для секции contact-form */
+DEFAULT_DIAMETER_MAX = 686
+DEFAULT_DIAMETER_MIN = 453
+
+diameterMax = document.querySelector('.section-contact-form__img-container')?.offsetWidth
+diameterMax = diameterMax < DEFAULT_DIAMETER_MAX ? DEFAULT_DIAMETER_MAX : diameterMax
+
+const circleItemsContactForm = document.querySelectorAll('.list-circle__item')
+circleCount = circleItemsContactForm.length
+
+diameterDelta = (diameterMax - DEFAULT_DIAMETER_MIN) / (circleCount - 1)
+console.log('diameterDelta=', diameterDelta)
+
+drawCircles(circleItemsContactForm)
+/* -------------------------------- */
+
+/* -------------------------------- */
 /* "Аккордеон" для секции choose-us */
 
 const ACCORDION_CONTAINER_CLASS = 'section-choose-us__list'
