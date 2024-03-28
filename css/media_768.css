@@ -1,0 +1,118 @@
+@media (max-width: 768px) {
+  .page {
+    max-width: 768px;
+  }
+
+  .container-rl120 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .container-tb150 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .container-tb100 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .header__inner {
+    max-width: 768px;
+  }
+
+  .section-hero__inner {
+    max-width: 768px;
+  }
+
+  .section-benefits__inner {
+    max-width: 768px;
+  }
+
+  .section-about__inner {
+    max-width: 768px;
+    height: auto;
+  }
+
+  .section-service__inner {
+    max-width: 768px;
+    height: auto;
+  }
+
+  .section-service__list {
+    gap: 32px;
+  }
+
+  .section-service__list::before,
+  .section-service__list::after {
+    flex-basis: auto;
+  }
+
+  .section-service__item:nth-child(n) {
+    margin: 0;
+    order: 0;
+  }
+
+  .section-choose-us__inner {
+    max-width: 768px;
+  }
+
+  .section-choose-us__text-container {
+    height: auto;
+  }
+
+  .section-choose-us__video {
+    position: s;
+  }
+
+  .section-start__inner {
+  }
+
+  .section-pricing__img {
+  }
+
+  .section-pricing__description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-pricing__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-pricing__price-box {
+    position: static;
+  }
+
+  .section-partners__inner {
+    transform: scale(calc(100%));
+  }
+
+  .section-articles__inner {
+    max-width: 768px;
+  }
+
+  .section-subscribe {
+    padding: 32px 16px;
+  }
+
+  .section-subscribe__inner {
+    height: auto;
+    justify-content: center;
+  }
+
+  .footer__container {
+    max-width: 768px;
+    display: none;
+  }
+
+  .footer__logo {
+    width: fit-content;
+  }
+
+  .footer__nav {
+    width: fit-content;
+  }
+}

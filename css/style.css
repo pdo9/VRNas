@@ -157,6 +157,7 @@
 .section-benefits__inner {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
   max-width: 1200px;
   min-height: 357px;
@@ -199,6 +200,7 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1238px;
   height: 645px;
 }
@@ -274,6 +276,7 @@
 .section-service__text-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1158px;
   height: 115px;
   padding-right: 42px;
@@ -361,6 +364,7 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1300px;
   height: 700px;
 }
@@ -440,6 +444,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   gap: 48px;
   max-width: 1200px;
@@ -568,6 +573,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 48px;
   max-width: 1254px;
   height: 838px;
@@ -597,7 +603,7 @@
 }
 
 .section-pricing__list {
-  width: 800px;
+  max-width: 800px;
   padding: 55px 0 0 42px;
 
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -689,8 +695,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 1054px;
-  min-height: 890px;
+  flex-wrap: wrap;
+  /* min-width: 1054px; */
+  width: 1054px;
+  /* min-height: 890px; */
+  height: 890px;
   margin: 0 auto;
 
   background: url('../img/background/bg-light-section-partners.svg') no-repeat center bottom,
@@ -801,6 +810,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-left: 120px;
   max-width: 1426px;
   height: 768px;
@@ -948,6 +958,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 38px 74px 31px 74px;
   height: 185px;
@@ -1041,6 +1052,7 @@
 .footer__menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 32px;
   width: 1200px;
   height: 250px;
@@ -1050,6 +1062,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 244px;
   height: 213px;
 }
@@ -1057,6 +1070,7 @@
 .footer__nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 771px;
   height: 248px;
 }
