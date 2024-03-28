@@ -32,13 +32,13 @@
               <a class="nav__link" href="./index.html">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#section-about-us">About us</a>
+              <a class="nav__link" href="./about.html">About us</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#section-service">Service</a>
+              <a class="nav__link" href="./service.html">Service</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link  nav__item--active" href="#section-pricing">Page</a>
+              <a class="nav__link" href="./pricing.html">Page</a>
               <ul class="nav__list-dropdown">
                 <li class="nav__item-dropdown"><a class="nav__link" href="./pricing.html">Pricing Plan</a></li>
                 <li class="nav__item-dropdown"><a class="nav__link" href="./team.html">Our Team</a></li>
@@ -48,7 +48,7 @@
               </ul>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#section-articles">Blog</a>
+              <a class="nav__link" href="./blog.html">Blog</a>
               <ul class="nav__list-dropdown">
                 <li class="nav__item-dropdown"><a class="nav__link" href="./blog.html">Our Articles</a></li>
               </ul>
@@ -101,49 +101,63 @@
 
       </section><!-- /.section-contact-links -->
 
-      <section class="section-contact-form  container-tb150  debug">
-        <div class="section-contact-form__inner  debug">
-          <div class="section-contact-form__img-container  debug">
-            <ul class="list-circle">
-              <li class="list-circle__item"></li>
-              <li class="list-circle__item"></li>
-              <li class="list-circle__item"></li>
-            </ul>
+      <section class="section-contact-form  container-tb150">
+        <div class="section-contact-form__img-container">
+          <ul class="list-circle">
+            <li class="list-circle__item"></li>
+            <li class="list-circle__item"></li>
+            <li class="list-circle__item"></li>
+          </ul>
 
-            <img class="section-contact-form__img1" src="./img/vr_users/ve_user11_part1.svg" alt="man in VR glasses">
-            <img class="section-contact-form__img2" src="./img/vr_users/ve_user11_part2.svg" alt="man in VR glasses">
+          <a class="section-contact-form__social-icon" href="https://twitter.com/#">
+            <img src="./icons/twitter_icon.svg" alt="twitter icon">
+          </a>
+          <a class="section-contact-form__social-icon" href="https://facebook.com/#">
+            <img src="./icons/facebook_icon.svg" alt="facebook icon">
+          </a>
+          <a class="section-contact-form__social-icon" href="https://instagram.com/#">
+            <img src="./icons/instagramm_icon.svg" alt="instagram icon">
+          </a>
+          <a class="section-contact-form__social-icon" href="https://github.com/#">
+            <img src="./icons/github_icon.svg" alt="github icon">
+          </a>
+
+          <img class="section-contact-form__img1" src="./img/vr_users/ve_user11_part1.svg" alt="man in VR glasses">
+          <img class="section-contact-form__img2" src="./img/vr_users/ve_user11_part2.svg" alt="man in VR glasses">
+        </div>
+
+        <div class="section-contact-form__form-container">
+          <div>
+            <h4 class="section-contact-form__caption caption-text-style01  text-gradient">Contact us</h4>
           </div>
+          <h2 class="section-contact-form__header  heading-text-style02">Get in Touch</h2>
+          <p class="section-contact-form__description  body-text-style01  color-grey-2">At VRNas, we're always happy
+            to hear from our clients and
+            potential clients. Whether you have a question
+            about our VR services, want to discuss a potential project, or just want to say hello, we're here to help.
+          </p>
 
-          <div class="section-contact-form__form-container  debug">
-            <div>
-              <h4 class="section-contact-form__caption caption-text-style01  text-gradient">Contact us</h4>
-            </div>
-            <h2 class="section-contact-form__header  heading-text-style02">Get in Touch</h2>
-            <p class="section-contact-form__description  body-text-style01  color-grey-2">At VRNas, we're always happy
-              to hear from our clients and
-              potential clients. Whether you have a question
-              about our VR services, want to discuss a potential project, or just want to say hello, we're here to help.
-            </p>
-
-            <form class="section-contact-form__form" action="#">
-              <input class="section-contact-form__input  grey-gradient-border" type="text" placeholder="First Name">
-              <input class="section-contact-form__input  grey-gradient-border" type="text" placeholder="Last Name">
-              <input class="section-contact-form__input  grey-gradient-border" type="text" placeholder="Email">
-              <input class="section-contact-form__input  grey-gradient-border" type="text" placeholder="Phone Number">
-              <textarea class="section-contact-form__textarea  grey-gradient-border" name="" id=""
-                placeholder="Message"></textarea>
-              <a class="section-contact-form__btn  btn-gradient  btn-text-style01" href="#">Send
-                Message</a>
-            </form>
-          </div>
+          <form class="section-contact-form__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <input class="section-contact-form__input  grey-gradient-border" type="text" placeholder="First Name"
+              name="firstName">
+            <input class="section-contact-form__input  grey-gradient-border" type="text" placeholder="Last Name"
+              name="lastName">
+            <input class="section-contact-form__input  grey-gradient-border" type="email" placeholder="Email"
+              name="email" required>
+            <input class="section-contact-form__input  grey-gradient-border" type="tel" placeholder="Phone Number"
+              name="phoneNumber">
+            <textarea class="section-contact-form__textarea  grey-gradient-border" placeholder="Message" name="message"
+              required></textarea>
+            <button class="section-contact-form__btn  btn-gradient  btn-text-style01">Message</button>
+          </form>
         </div>
 
       </section><!-- /.section-contact-form -->
 
-      <section class="section-contact-map  container-rl120  debug">
-        <div class="section-contact-map__inner  debug">
-          123
-        </div>
+      <section class="section-contact-map  container-rl120">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8961.365133672041!2d-122.17557015693106!3d37.42952031978498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQodGC0LDQvdGE0L7RgNC0!5e0!3m2!1sru!2sru!4v1711630934032!5m2!1sru!2sru"
+          width="1200" height="480" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </section><!-- /.section-contact-map -->
 
